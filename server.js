@@ -1,4 +1,4 @@
-const express = require("express*);
+const express = require("express");
 const EmployeesRoutes = require("./src/Employees/routes");
 const app = express();
 const port = 3000;
