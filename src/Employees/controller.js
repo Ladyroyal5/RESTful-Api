@@ -65,7 +65,7 @@ const updateEmployee = (req, res) => {
 		}
 
 
-		pool.query(queries.updateEmployee, [name id], (error, results) => {
+		pool.query(queries.updateEmployee, [name, id], (error, results) => {
 			if (error) throw error;
 			res.status(200).send("Employee updated successfully");
 		});
